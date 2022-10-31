@@ -36,6 +36,7 @@ scaler = MinMaxScaler()
 X = scaler.fit_transform(X)
 kmeans_model = kmeans_algo2.fit(X)
 y_pred = kmeans_model.labels_
+""" "alksjbhcwhicfiywebcviyewcif" """
 print("Silhouette:",metrics.silhouette_score(X, y_pred, metric='euclidean'))
 print("Purity:",purity_score(y_true, y_pred))
 
