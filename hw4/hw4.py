@@ -29,7 +29,7 @@ y_pred = kmeans_model.labels_
 y_true = y
 print("Silhouette:",metrics.silhouette_score(X, y_pred, metric='euclidean'))
 print("Purity:",purity_score(y_true, y_pred))
-"OLA"
+
 
 kmeans_algo2 = cluster.KMeans(n_clusters=3, random_state=seeds[1])
 scaler = MinMaxScaler()
